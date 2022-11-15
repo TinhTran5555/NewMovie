@@ -1,0 +1,61 @@
+.banner .slick-list img {
+  margin: auto;
+}
+.banner .bannerContent {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 670px;
+}
+.banner .slick-next {
+  right: 25px !important;
+  width: 50px !important;
+  height: 50px !important;
+  transform: translate(50%, -50%) !important;
+}
+.banner .slick-prev {
+  z-index: 1;
+  left: 25px !important;
+  width: 50px !important;
+  height: 50px !important;
+  transform: translate(-50%, -50%) !important;
+}
+.banner .slick-next:before {
+  font-size: 50px !important;
+}
+.banner .slick-prev:before {
+  font-size: 50px !important;
+}
+.banner .slick-dots li button {
+  width: 40px !important;
+  height: 40px !important;
+}
+.banner .slick-dots li button:before {
+  color: white !important;
+  font-size: 20px !important;
+}
+.banner .overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.1);
+  z-index: 2;
+  cursor: pointer;
+}
+.banner .trailer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 40;
+}
+.banner .buttonPlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

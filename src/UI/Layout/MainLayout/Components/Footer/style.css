@@ -1,0 +1,11 @@
+.footer .footerPartner img ,.footer .footerApp img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+.footer .title {
+    font-size: 30px;
+    font-weight: bold;
+
+}

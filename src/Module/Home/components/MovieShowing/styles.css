@@ -1,0 +1,46 @@
+.movieShowing .ant-tabs-nav-wrap {
+    justify-content: center;
+}
+
+.movieShowing .ant-tabs-tab-btn {
+    font-size: 20px;
+} 
+.movieShowing .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: darkblue; 
+}
+
+.movieShowing .item .img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 92%;
+    position: relative;
+    transition: all 1.5s ease 0.5s;
+}
+.movieShowing .item .img:hover {
+  transform: scale(1.05);
+  border-radius: 10px;
+}
+.movieShowing .slick-next {
+    right: 25px !important;
+    width: 50px !important;
+    height: 50px !important;
+    transform: translate(50%, -50%) !important;
+  }
+  .movieShowing .slick-prev {
+    z-index: 1;
+    left: 25px !important;
+    width: 50px !important;
+    height: 50px !important;
+    transform: translate(-50%, -50%) !important;
+  }
+  .movieShowing .slick-next:before {
+    font-size: 50px !important;
+  }
+  .movieShowing .slick-prev:before {
+    font-size: 50px !important;
+  }
+  .movieShowing .infoButton button:hover {
+    transform: scale(1.1);
+  }

@@ -1,0 +1,154 @@
+.contentListGhe {
+  min-width: 100%;
+  min-height: 570px;
+}
+
+
+.gheChuaDat {
+  color: #000;
+  border: 3px solid #fff;
+  background: #fff;
+  width: 24px;
+  height: 24px;
+  font-size: 10px;
+  border-radius: 5px;
+  margin: 3px;
+}
+.gheVip {
+  color: black;
+  
+  border: 3px solid #01c73c;
+ 
+  border-radius: 5px;
+  margin: 3px;
+}
+.gheDangChon {
+  color: #fff;
+  border: 3px solid red;
+  
+  border-radius: 5px;
+  background: rgb(249, 63, 63);
+  margin: 3px;
+}
+.gheDaDat {
+  color: white;
+ 
+  border-radius: 5px; 
+  background: #bbb;
+  
+ 
+}
+.gheDangChon:hover{
+background:rgb(251, 96, 96) ;
+ }
+.gheChuaDat:hover{
+  background-color: #ffd4d4; 
+}
+.hienThiGhe {
+  min-width: 492px;
+  max-width: 492px;
+}
+
+@media only screen and (min-width: 678px) {
+  .gheChuaDat {
+    width: 34px;
+  height: 34px;
+  font-size: 14px;
+  }
+  .hienThiGhe {
+    min-width: 672px;
+    max-width: 672px;
+  }
+ 
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .gheChuaDat {
+    width: 35px;
+  height: 35px;
+  }
+  .hienThiGhe {
+    min-width: 680px;
+    max-width: 680px;
+    
+  }
+  
+  .contentListGhe {
+    min-width: 100%;
+    min-height: 580px;
+  }
+}
+.buttonSubmit  {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0px;
+  border: 0px;
+  margin: 0px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  min-width: 64px;
+  padding: 6px 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: rgb(255, 255, 255);
+  background-color: rgb(25, 118, 210);
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+  border-radius: 8px;
+}
+.buttonSubmit:hover {
+  background-color: rgb(21, 101, 192);
+  text-decoration: none;
+}
+.buttonDel {
+  display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 5px 15px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border: 1px solid rgba(156, 39, 176, 0.5);
+    color: rgb(156, 39, 176);
+    border-radius: 8px;
+}
+.buttonDel:hover {
+  border: 1px solid rgb(156, 39, 176);
+  text-decoration: none;
+  background-color: rgba(156, 39, 176, 0.04)
+}
+
+

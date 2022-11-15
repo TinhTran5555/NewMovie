@@ -1,0 +1,12 @@
+.Header .contentHeader a {
+ font-size: 25px;
+ font-weight: bold;
+ padding: 5px 10px;
+ border-radius: 10px;
+ /* border: 1px solid black; */
+}
+.Header .contentHeader a:hover {
+    background-color: black;
+    color: white;
+    
+}

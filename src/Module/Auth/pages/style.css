@@ -1,0 +1,31 @@
+.backGroundAuth {
+    background-image: url("/public/Img/bgAuth.jpg");
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: contain;
+    justify-content: center;
+    
+    background-position: center;
+}
+.Auth button {
+    border-radius: 10px;
+}
+.Auth button:hover {
+    color: black;
+    background-color:cornflowerblue;
+    transform: scale(1.2)
+}
+.Auth .ant-form-item-label {
+    overflow: unset;
+    margin-right: 110px
+}
+.Auth .ant-form-item-explain-error {
+    color: white;
+  }
+  .Register input {
+
+    padding: 10px 50px 10px 10px;
+    border-radius: 10px;
+  }
