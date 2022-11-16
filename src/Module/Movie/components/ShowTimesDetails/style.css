@@ -1,14 +1,15 @@
-.Cinema .ant-tabs-nav-wrap {
+.showTimeMovies .ant-tabs-nav-wrap {
   justify-content: center;
 }
-.Cinema .ant-tabs-nav-list {
+.showTimeMovies .ant-tabs-nav-list {
   justify-content: center;
-  width: 50%;
+  width: 100%;
 }
-.Cinema .ant-tabs-nav {
+.showTimeMovies > .ant-tabs-nav {
   margin-bottom: 0;
+  height: 50px;
 }
-.Cinema .ant-tabs-tab {
+.showTimeMovies .ant-tabs-tab {
   background-color: mintcream;
   width: calc(100% / 6);
   margin-left: 0;
@@ -16,51 +17,82 @@
   border-right: 1px solid burlywood;
   border-left: 1px solid burlywood;
 }
-.Cinema .ant-tabs-tab:hover {
+.showTimeMovies .ant-tabs-tab:hover {
   border-color: brown;
   background-color: #e1f7fd;
 }
-.Cinema .ant-tabs-tab .ant-tabs-tab-btn {
+.showTimeMovies .ant-tabs-tab .ant-tabs-tab-btn {
   width: 100%;
   height: 100%;
 }
 
-.CinemaList .ant-tabs-nav {
-  width: 40%;
+.showtimeList .ant-tabs-nav {
+  width: 100%;
 }
-.CinemaList .ant-tabs-nav .ant-tabs-nav-wrap,
-.CinemaList  .ant-tabs-content-holder {
-  height: 300px;
+.showtimeList .ant-tabs-nav .ant-tabs-nav-wrap {
+  height: 110px;
   overflow-y: auto;
   scroll-snap-type: y;
   align-items: flex-start;
 }
-.CinemaList .ant-tabs-nav .ant-tabs-nav-list {
+.showtimeList .ant-tabs-content-holder {
+  height: 120px;
+  overflow-y: auto;
+  scroll-snap-type: y;
+  align-items: flex-start;
+}
+.showtimeList .ant-tabs-nav .ant-tabs-nav-list {
   flex-direction: column;
   width: 100%;
 }
-.CinemaList .ant-tabs-nav .ant-tabs-nav-list .ant-tabs-tab  {
+.showtimeList .ant-tabs-nav .ant-tabs-nav-list .ant-tabs-tab {
   width: 100%;
-  height: 120px;
+  height: 40%;
   padding: 10px 15px;
 }
-.CinemaList .ant-tabs-ink-bar {
+.showtimeList .ant-tabs-ink-bar {
   display: none;
 }
-.CinemaList .item {
-    
-    height: 40%;
-    padding: 10px 15px;
+.showtimeList .item {
+  height: 50%;
+  padding: 10px 15px;
 }
-.CinemaList .item img {
-    width: 70%;
+.showtimeList .item img {
+  width: 70%;
   height: 80%;
+}
+.showtimeList .ant-tabs-content-holder .ant-tabs-content,
+.showtimeList .ant-tabs-content-holder .ant-tabs-content .ant-tabs-tabpane {
+  height: 100%;
+}
+.showtimeList .itemShowtime {
+  overflow-x: auto;
+  scroll-snap-type: x;
+}
+@media only screen and (min-width: 640px) {
+  .showTimeMovies > .ant-tabs-nav {
+    height: 100px;
+  }
+  .showtimeList .ant-tabs-nav .ant-tabs-nav-wrap {
+    height: 145px;
+  
+  }
+}
+@media only screen and (min-width: 768px) {
+  .showtimeList .ant-tabs-nav {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .showTimeMovies  .ant-tabs-nav-list {
+    width: 60%;
+  }
 
-}
-.CinemaList  .ant-tabs-content-holder .ant-tabs-content, .CinemaList  .ant-tabs-content-holder .ant-tabs-content .ant-tabs-tabpane {
-    height: 100%;
-}
-.CinemaList .itemShowtime {
-    overflow-y: auto;
-    scroll-snap-type: y;
+  .showtimeList .item {
+    height: 40%;
+  }
+
+  .showtimeList .ant-tabs-nav .ant-tabs-nav-list .ant-tabs-tab {
+    height: 120px;
+  }
 }

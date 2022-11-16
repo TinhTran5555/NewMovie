@@ -88,7 +88,7 @@ const Header = () => {
             rel="noopener noreferrer"
             href="#"
             aria-label="Back to homepage"
-            className="flex items-center p-2 w-2/5 h-full"
+            className="flex items-center p-2 w-full sm:w-4/5 md:w-3/5 lg:w-2/5 h-full"
           >
             <img
               src="/Img/logo.jpg"

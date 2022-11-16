@@ -4,8 +4,8 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { notification } from "antd";
 import { NavLink } from "react-router-dom";
+import useViewport from "../../../../App/Hooks/useViewport";
 
-// data: taiKhoan, matKhau, email, hoTen, soDt
 
 const Register = () => {
   const {
@@ -23,8 +23,24 @@ const Register = () => {
     mode: "onTouched",
   });
   const navigate = useNavigate();
+   
+  const viewPort = useViewport();
+  const isMobileS = viewPort.width >= 425;
+  const isMobile = viewPort.width >= 640;
+   let widthLogin = "270px"
+   let paddingLogin = "none"
+   let offset = 0
+   if (isMobileS) {
+   widthLogin = "350px";
+
+  }
+   if (isMobile) {
+    widthLogin = "580px";
+    paddingLogin = "60px 32px 30px";
+    offset = 2
+  }
   const styleRegister = {
-    width: "580px",
+    width: widthLogin,
     height: "fit-content",
     zIndex: "1000",
     position: "relative",
@@ -33,7 +49,7 @@ const Register = () => {
       "linear-gradient(to bottom,rgb(255 255 255 / 90%),rgba(64, 108, 106,.9))",
   };
   const styleContent = {
-    padding: "60px 32px 30px",
+    padding: paddingLogin,
     color: "text-white",
   };
   const styleImg = {

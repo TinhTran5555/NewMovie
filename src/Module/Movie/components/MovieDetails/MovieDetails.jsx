@@ -7,8 +7,7 @@ import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 const MovieDetails = ({ movieId }) => {
   const {
     data: movieDetails,
-    isLoading,
-    error,
+   
   } = useRequest(() => movieAPIs.getMovieDetails(movieId));
   const [showingTrailer, setShowingTrailer] = useState(false);
   const [showingDetails, setShowingDeatails] = useState(true);
@@ -46,7 +45,7 @@ const MovieDetails = ({ movieId }) => {
           <div className="md:col-span-6 col-span-12  md:pb-0  pb-5">
             <div className="flex flex-col flex-wrap justify-center gap-2 h-full items-center mt-3">
               {" "}
-              <div className="bg-sky-900 rounded-2xl p-2">
+              <div className="bg-sky-900 rounded-2xl p-2 w-full">
                 <div className="flex  justify-center gap-4">
                   <div className="truncate items-center justify-center leading-4 text-base h-8 px-4 py-2 rounded-lg font-bold tracking-wide text-white font-mono bg-sky-600">
                     {movieDetails?.hot ? <span>Hot</span> : null}

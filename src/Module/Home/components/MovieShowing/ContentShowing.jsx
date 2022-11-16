@@ -31,19 +31,32 @@ function SamplePrevArrow(props) {
 
 const ContentShowing = ({ itemMovie, isLoading}) => {
   const viewPort = useViewport();
-  const isLapTop = viewPort.width <= 1024;
-  const isTablet = viewPort.width <= 768;
+  const isMobile = viewPort.width >= 640;
+  const isTablet = viewPort.width >= 768;
+  const isLapTop = viewPort.width >= 1024;
+  const isLapTopL = viewPort.width >= 1280;
   
-  let valueSlidesToShow = 4;
-if (isLapTop) {
-    valueSlidesToShow = 3;
+  
+  let valueSlidesToShow = 1;
+
+
+  
+  if (isMobile) {
+    valueSlidesToShow = 2;
    
   }
   if (isTablet) {
     valueSlidesToShow = 2;
    
   }
-  
+  if (isLapTop) {
+    valueSlidesToShow = 3;
+   
+  }
+  if (isLapTopL) {
+    valueSlidesToShow = 4;
+   
+  }
   var settings = {
   dots: true,
   infinite: true,
@@ -82,7 +95,7 @@ if (isLapTop) {
                   setIndexHover(null);
                   setDisplay(false);
                 }}
-                className="lg:h-48 md:h-36 w-full img bg-black rounded-lg"
+                className=" w-full img bg-black rounded-lg"
                 style={{
                   backgroundImage: `url(${movie.hinhAnh})`,
                 }}

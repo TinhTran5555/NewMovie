@@ -12,7 +12,7 @@ const ListMovie = ({listRaps}) => {
   
       const items = listRaps?.map((listRap ,index) => {
         return ( { label: 
-         <div className=" flex" >
+         <div className=" flex text-sm sm:text-lg md:text-sm lg:text-lg" >
         <img
           src={listRap.hinhAnh}
           className="rounded-full w-1/5 h-full"
@@ -31,7 +31,7 @@ const ListMovie = ({listRaps}) => {
       );
   return (
    
-    <Tabs  className="CinemaList flex-row w-full" defaultActiveKey="1" items={items} />
+    <Tabs  className="CinemaList md:flex-row w-full" defaultActiveKey="1" items={items} />
   
   )
 }

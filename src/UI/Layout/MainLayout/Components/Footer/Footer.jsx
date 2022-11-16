@@ -1,11 +1,11 @@
 import React from "react";
 const Footer = () => {
   return (
-    <div className="text-black py-5 text-xs  footer" id="footer">
+    <div className="text-black py-5 text-base  footer" id="footer">
       <div className="footerContent grid xl:grid-cols-3  lg:grid-cols-2  grid-cols-1">
         <div className="px-5 my-3">
           <h5 className="title">TIX</h5>
-          <div className="text-lg grid grid-cols-2 mt-3">
+          <div className="sm:text-lg grid grid-cols-2 mt-3">
             <a target="_blank" rel="noopener noreferrer" href="#">
               FAQ
             </a>
@@ -180,7 +180,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="px-5 my-3 grid grid-cols-2 footerApp col-span-2 xl:col-span-1">
+        <div className="px-5 my-3 grid grid-cols-2 footerApp lg:col-span-2 xl:col-span-1">
           <div className="">
             <h5 className="title">MOBIL APP</h5>
             <div className="mt-3 grid grid-cols-2">
@@ -243,7 +243,7 @@ const Footer = () => {
             <h5 className="text-black text-2xl">
               TICKET - SẢN PHẨM CỦA HỌC VIÊN CYBERSOFT
             </h5>
-            <div className="mt-2 grid grid-cols-2 ml-2">
+            <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 ml-2">
               <p>Số Điện Thoại (Hotline): 0969.347.727</p>
               <p>
                 Email: <span>tranvotantinh@gmail.com</span>

@@ -20,7 +20,7 @@ const ShowTimesDetails = ({ movieId }) => {
   });
   return (
     <Tabs
-      className="Cinema mt-5"
+      className="showTimeMovies mt-5"
       defaultActiveKey="1"
       items={items}
       id="showTimeMovies"

@@ -3,10 +3,11 @@
 }
 .Cinema .ant-tabs-nav-list {
   justify-content: center;
-  width: 50%;
+  width: 80%;
 }
-.Cinema .ant-tabs-nav {
+.Cinema > .ant-tabs-nav {
   margin-bottom: 0;
+  height: 50px;
 }
 .Cinema .ant-tabs-tab {
   background-color: mintcream;
@@ -26,10 +27,10 @@
 }
 
 .CinemaList .ant-tabs-nav {
-  width: 40%;
+  width: 100%;
 }
 .CinemaList .ant-tabs-nav .ant-tabs-nav-wrap,
-.CinemaList  .ant-tabs-content-holder {
+.CinemaList .ant-tabs-content-holder {
   height: 300px;
   overflow-y: auto;
   scroll-snap-type: y;
@@ -39,28 +40,53 @@
   flex-direction: column;
   width: 100%;
 }
-.CinemaList .ant-tabs-nav .ant-tabs-nav-list .ant-tabs-tab  {
+.CinemaList .ant-tabs-nav .ant-tabs-nav-list .ant-tabs-tab {
   width: 100%;
-  height: 120px;
+  height: 40%;
   padding: 10px 15px;
 }
 .CinemaList .ant-tabs-ink-bar {
   display: none;
 }
 .CinemaList .item {
-    
-    height: 40%;
-    padding: 10px 15px;
+  height: 50%;
+  padding: 10px 15px;
 }
 .CinemaList .item img {
-    width: 70%;
+  width: 70%;
   height: 80%;
-
 }
-.CinemaList  .ant-tabs-content-holder .ant-tabs-content, .CinemaList  .ant-tabs-content-holder .ant-tabs-content .ant-tabs-tabpane {
-    height: 100%;
+.CinemaList .ant-tabs-content-holder .ant-tabs-content,
+.CinemaList .ant-tabs-content-holder .ant-tabs-content .ant-tabs-tabpane {
+  height: 100%;
 }
 .CinemaList .itemShowtime {
-    overflow-x: auto;
-    scroll-snap-type: x;
+  overflow-x: auto;
+  scroll-snap-type: x;
+}
+@media only screen and (min-width: 640px) {
+  .Cinema > .ant-tabs-nav {
+    height: 100px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .CinemaList .ant-tabs-nav {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .Cinema .ant-tabs-nav-list {
+    width: 60%;
+  }
+
+  .CinemaList .item {
+    height: 40%;
+  }
+  .CinemaList .ant-tabs-nav .ant-tabs-nav-wrap,
+  .CinemaList .ant-tabs-content-holder {
+    height: 400px;
+  }
+  .CinemaList .ant-tabs-nav .ant-tabs-nav-list .ant-tabs-tab {
+    height: 120px;
+  }
 }

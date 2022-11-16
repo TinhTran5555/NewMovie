@@ -4,6 +4,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { loginHander } from "../../Slices/authSlice";
 import { NavLink } from "react-router-dom";
+import useViewport from "../../../../App/Hooks/useViewport";
 const Login = () => {
   const {
     handleSubmit,
@@ -20,8 +21,24 @@ const Login = () => {
   const dispatch = useDispatch();
   const { user, isLoading } = useSelector((state) => state.auth);
 
+ 
+  const viewPort = useViewport();
+  const isMobile = viewPort.width >= 640;
+   let widthLogin = "270px"
+   let paddingLogin = "none"
+   let offset = 0
+   if (!isMobile) {
+   widthLogin = "270px";
+   paddingLogin = "none";
+    offset = 0
+  }
+   if (isMobile) {
+    widthLogin = "580px";
+    paddingLogin = "60px 32px 30px";
+    offset = 2
+  }
   const styleLogin = {
-    width: "580px",
+    width: widthLogin,
     height: "fit-content",
     zIndex: "1000",
     position: "relative",
@@ -30,7 +47,7 @@ const Login = () => {
       "linear-gradient(to bottom,rgb(255 255 255 / 90%),rgba(64, 108, 106,.9))",
   };
   const styleContent = {
-    padding: "60px 32px 30px",
+    padding: paddingLogin,
     color: "text-white",
   };
   const styleImg = {
@@ -133,7 +150,7 @@ const Login = () => {
               )}
             />
 
-            <Form.Item wrapperCol={{ offset: 2 }}>
+            <Form.Item wrapperCol={{ offset: offset }}>
               <Button
                 className="border bg-slate-100 font-bold"
                 htmlType="submit"

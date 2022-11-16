@@ -10,10 +10,10 @@ const ShowTime = ({ ListPhims, ListLichChieu }) => {
 
   return (
     <div className="flex justify-center">
-      <div className="ml-2 flex flex-col w-11/12 itemShowtime ">
+      <div className="ml-2 flex flex-col w-full itemShowtime justify-center">
         <div
-          className="grid gap-3 
-               grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
+          className="flex gap-4
+               
                    "
         >
           {ListLichChieu?.slice(0, 45).map((lichChieu, index) => {

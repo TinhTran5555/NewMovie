@@ -12,7 +12,7 @@ const CinemaShowTime = ({ListPhims}) => {
     {ListPhims?.map((movie, index) => { 
         return (   
               <div key={index} className="flex item w-full">
-                <div className="flex flex-col  w-2/5 md:w-1/3 h-full justify-around items-center overflow-hidden">
+                <div className="flex flex-col  w-2/5 md:w-1/3 h-full justify-around items-center text-center">
                 <img
                   className=" rounded-xl"
                   src={movie.hinhAnh}
@@ -20,9 +20,9 @@ const CinemaShowTime = ({ListPhims}) => {
                 /><h1 className="text-xl text-green-700 h-fit">
                     {movie.tenPhim}
                   </h1></div>
-                <div className="ml-2 flex flex-col w-full itemShowtime">
-                  <div className="grid gap-3 grid-cols-2  lg:grid-cols-4 xl:grid-cols-6">
-                    
+                <div className="ml-2 flex flex-col w-full itemShowtime justify-center">
+                  <div className="flex gap-3  ">
+               
                     {movie.lstLichChieuTheoPhim
                       ?.slice(0, 12)
                       .map((lichChieu, index) => {

@@ -6,7 +6,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  height: 670px;
+  height: 300px;
 }
 .banner .slick-next {
   right: 25px !important;
@@ -58,4 +58,25 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+@media only screen and (min-width: 640px) {
+  .banner .bannerContent {
+    height: 450px;
+  }
+ 
+
+}
+@media only screen and (min-width: 768px) {
+  .banner .bannerContent {
+    height: 500px;
+  }
+ 
+
+}
+@media only screen and (min-width: 1024px) {
+  .banner .bannerContent {
+    height: 600px;
+  }
+ 
+
 }

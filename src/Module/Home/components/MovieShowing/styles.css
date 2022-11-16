@@ -13,7 +13,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 360px;
     width: 92%;
     position: relative;
     transition: all 1.5s ease 0.5s;
@@ -23,14 +23,14 @@
   border-radius: 10px;
 }
 .movieShowing .slick-next {
-    right: 25px !important;
+    right: 35px !important;
     width: 50px !important;
     height: 50px !important;
     transform: translate(50%, -50%) !important;
   }
   .movieShowing .slick-prev {
     z-index: 1;
-    left: 25px !important;
+    left: 35px !important;
     width: 50px !important;
     height: 50px !important;
     transform: translate(-50%, -50%) !important;
@@ -43,4 +43,18 @@
   }
   .movieShowing .infoButton button:hover {
     transform: scale(1.1);
+  }
+  @media only screen and (min-width: 640px) {
+    .movieShowing .item .img {
+      height: 400px;
+    }
+   
+  
+  }
+  @media only screen and (min-width: 1024px) {
+    .movieShowing .item .img {
+      height: 450px;
+    }
+   
+  
   }
