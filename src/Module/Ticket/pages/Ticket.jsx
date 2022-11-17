@@ -17,13 +17,11 @@ import { notification } from "antd";
 const Ticket = () => {
   const { ticketId } = useParams();
   const dispatch = useDispatch();
-    const { user } = useSelector(authSelector);
+  const { user } = useSelector(authSelector);
 
-  
   const { tickets, isLoading } = useSelector(ticketSelector);
 
   const { selectedTicket } = useSelector(ticketSelector);
-  
 
   const styleScreen = {
     color: "#fff",
@@ -49,21 +47,21 @@ const Ticket = () => {
   useEffect(() => {
     dispatch(getTicketDetailsThunk(ticketId));
   }, [ticketId]);
-  
+
   if (!user) {
     notification.error({
       message: "Cần đăng nhập tài khoản",
     });
-    return <Navigate to="/login" />
+    return <Navigate to="/login" />;
   }
   return (
     <div
-      className="  ticket pb-5"
+      className="  ticket pb-5 "
       style={{ backgroundColor: "#e3e9f3", borderRadius: "20px" }}
     >
-      <div className="flex lg:flex-row  sm:flex-col justify-around">
+      <div className="flex lg:flex-row flex-col justify-around">
         <div className="  lg:max-w-3xl flex flex-col items-center justify-center">
-          <div className="flex flex-col items-center mt-2 contentListGhe">
+          <div className="flex flex-col items-center mt-2 contentListGhe w-full">
             <div className="text-3xl text-sky-700 font-bold mt-5">
               XIN MỜI CHỌN VÉ
             </div>
@@ -200,7 +198,7 @@ const Ticket = () => {
               </div>
             ) : null}
           </div>
-          <div className="absolute bottom-0 w-full ">
+          <div className="absolute bottom-0 w-full left-0 buttonBox">
             <button className="buttonSubmit" onClick={handlePostTicket}>
               Đặt vé
             </button>

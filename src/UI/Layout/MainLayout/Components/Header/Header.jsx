@@ -80,7 +80,7 @@ const Header = () => {
     },
   ];
   return (
-    <div className="p-6 bg-opacity-40 bg-white text-black fixed w-full z-20 Header">
+    <div className="p-6 bg-opacity-40 bg-white text-black fixed w-full z-20 Header ">
       <div className=" flex justify-between items-center h-16 mx-auto ">
         <div className="w-1/5 h-5/6">
           <NavLink

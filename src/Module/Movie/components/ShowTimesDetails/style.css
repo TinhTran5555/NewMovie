@@ -40,6 +40,7 @@
   overflow-y: auto;
   scroll-snap-type: y;
   align-items: flex-start;
+  width: 100%;
 }
 .showtimeList .ant-tabs-nav .ant-tabs-nav-list {
   flex-direction: column;
